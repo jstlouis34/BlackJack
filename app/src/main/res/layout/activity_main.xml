@@ -1,18 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#277714"
     tools:context="com.apsu.joshua.blackjack.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-</android.support.constraint.ConstraintLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvDealer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dealer Cards"
+                    android:textSize="30sp"
+                    android:textColor="#ffff00" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/dealerCard1"
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="2dp"
+                    android:background="#000"/>
+
+                <ImageView
+                    android:id="@+id/dealerCard2"
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="2dp"
+                    android:background="#000" />
+
+                <ImageView
+                    android:id="@+id/dealerCard3"
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="2dp"
+                    android:background="#000" />
+
+                <ImageView
+                    android:id="@+id/dealerCard4"
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="2dp"
+                    android:background="#000" />
+
+                <ImageView
+                    android:id="@+id/dealerCard5"
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="2dp"
+                    android:background="#000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvPlayer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Cards"
+                    android:textSize="30sp"
+                    android:textColor="#ffff00" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/playerCard1"
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="2dp"
+                    android:background="#000" />
+
+                <ImageView
+                    android:id="@+id/playerCard2"
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="2dp"
+                    android:background="#000" />
+
+                <ImageView
+                    android:id="@+id/playerCard3"
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="2dp"
+                    android:background="#000" />
+
+                <ImageView
+                    android:id="@+id/playerCard4"
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="2dp"
+                    android:background="#000" />
+
+                <ImageView
+                    android:id="@+id/playerCard5"
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="2dp"
+                    android:background="#000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tvBet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Player Bet: "
+                    android:textSize="30sp"
+                    android:textColor="#ffff00" />
+
+                <EditText
+                    android:id="@+id/etBet"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="#fff"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btnPlaceBet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bet" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/btnHit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Hit" />
+
+                <Button
+                    android:id="@+id/btnStay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Stay" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tvTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total: 200"
+                    android:textSize="30sp"
+                    android:textColor="#ffff00" />
+
+            </LinearLayout>
+        </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#277714">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="How to Play"
+        android:textColor="#fff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView"
+        android:layout_margin="5dp"
+        android:text="The goal of BlackJack is to have a hand value closer to 21 than that of the dealer, without going over.\n\n
+        Card Values:\n
+
+    * An Ace = either 1 or 11.\n
+    * 2 - 9 = their number value.\n
+    * 10, Jack, Queen, and King = 10.\n\n
+
+    The value of the hand is the total of the numbers in your hand. For example (Jack, 3, 4 = 18).\n\n
+
+    Ace is counted as 1 only if you are going over 21 or there are two Aces in the hand.\n\n
+
+    Button Click:\n
+        * Hit -  Means you want to draw another card.\n
+        * Stand -  Means you stop at the current total.\n\n
+
+    Enjoy the Game!"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+</RelativeLayout>

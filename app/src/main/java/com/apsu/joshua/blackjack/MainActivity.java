@@ -110,6 +110,12 @@ public class MainActivity extends Activity {
                 if (user.getHandValue() >= 21) {
                     endGame();
                 } else if (dealer.isHold() == false){
+                    Button placeBet = (Button) findViewById(R.id.btnPlaceBet);
+                    Button hit = (Button) findViewById(R.id.btnHit);
+                    Button stay = (Button) findViewById(R.id.btnStay);
+                    placeBet.setEnabled(false);
+                    hit.setEnabled(false);
+                    stay.setEnabled(false);
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
@@ -121,6 +127,12 @@ public class MainActivity extends Activity {
                                 dealer.setHold(true);
                                 dealertv.setText("Dealer: " + Integer.toString(dealer.getHandValue()) + "(Hold)");
                             }
+                            Button placeBet = (Button) findViewById(R.id.btnPlaceBet);
+                            Button hit = (Button) findViewById(R.id.btnHit);
+                            Button stay = (Button) findViewById(R.id.btnStay);
+                            placeBet.setEnabled(true);
+                            hit.setEnabled(true);
+                            stay.setEnabled(true);
                         }
                         }, 1000);
                 }

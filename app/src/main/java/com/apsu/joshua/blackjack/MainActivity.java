@@ -79,7 +79,7 @@ public class MainActivity extends Activity {
             public void onClick(View view) {
 
                 if (Integer.parseInt(betAmount.getText().toString()) > money) {
-                    Toast.makeText(getApplicationContext(),"You don't have that much money!",Toast.LENGTH_LONG);
+                    Toast.makeText(getApplicationContext(),"You don't have that much money!",Toast.LENGTH_LONG).show();
                 }
                 else {
                     bet = Integer.parseInt(betAmount.getText().toString());
